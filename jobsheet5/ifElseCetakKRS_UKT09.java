@@ -14,6 +14,11 @@ public class ifElseCetakKRS_UKT09 {
         } else {
             System.out.println("Registrasi ditolak. Silahkan lunasi UKT terlebih dahulu");
     }
+    String pesan = (uktLunas)
+    ? "Registrasi berhasil,silahkan cetak KRS"
+    : "Registrasi ditolak, silakan lunasi UKT terlebi dahulu";
+
+    System.out.println("[Ternary]:" +pesan);
     sc.close();
 }
     
