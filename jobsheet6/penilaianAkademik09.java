@@ -14,11 +14,19 @@ public class penilaianAkademik09 {
         System.out.println("\n---- Mata Kuliah 1: Algoritma dan Pemrograman ---");
         System.out.println("Nilai UTS :");
         double utsAlgo = sc.nextDouble();
+        if (utsAlgo < 0 || utsAlgo > 100); {
+            System.out.println("Nilai UTS tidak valid, harus antara 0-100");
+            return;
+
         System.out.println("Nilai UAS :");
         double uasAlgo = sc.nextDouble();
+        if (uasAlgo < 0 || uasAlgo > 100); {
+            System.out.println("Nilai UTS tidak valid, harus antara 0-100");
+            return;
+
         System.out.println("Nilai Tugas :");
         double tugasAlgo = sc.nextDouble();
-
+         
         System.out.println("\n--- Mata Kuliah 2: Struktur Data ---");
         System.out.println("Nilai UTS :");
         double utsStruk = sc.nextDouble();
@@ -27,8 +35,18 @@ public class penilaianAkademik09 {
         System.out.println("Nilai Tugas :");
         double tugasStruk = sc.nextDouble();
 
+        System.out.println("\n--- Mata Kuliah 3: Java ---");
+        System.out.println("Nilai UTS :");
+        double utsJava = sc.nextDouble();
+        System.out.println("Nilai UAS :");
+        double uasJava = sc.nextDouble();
+        System.out.println("Nilai Tugas :");
+        double tugasJava = sc.nextDouble(); 
+
+
         double nilaiAkhirAlgo = (0.3 * utsAlgo) + (0.4 * uasAlgo) + (0.3 * tugasAlgo);
         double nilaiAkhirStruk = (0.3 * utsStruk) + (0.4 * uasStruk) + (0.3 * tugasStruk);
+
 
         String hurufAlgo = konversiNilaiHuruf(nilaiAkhirAlgo);
         String hurufStruk = konversiNilaiHuruf(nilaiAkhirStruk);
